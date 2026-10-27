@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3eb">
+  <title>Transit Atlas | Transportation System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="atlas-shell">
+
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="dashboard">
+        <span class="brand-symbol">T<span>A</span></span>
+        <span class="brand-copy">
+          <strong>TRANSIT ATLAS</strong>
+          <small>NETWORK OPERATIONS</small>
+        </span>
+      </a>
+
+      <div class="sidebar-caption">CONTROL ROOM</div>
+      <button class="nav-item active" data-page="dashboard">
+        <span class="nav-number">01</span>
+        <span>Network overview</span>
+        <span class="nav-arrow">↗</span>
+      </button>
+      <button class="nav-item" data-page="bookings-report">
+        <span class="nav-number">02</span>
+        <span>Journey manifest</span>
+        <span class="nav-arrow">↗</span>
+      </button>
+      <button class="nav-item" data-page="route-timeline">
+  <span class="nav-number">03</span>
+  <span>Route stop timeline</span>
+  
+<button class="nav-item" data-page="trip-schedule">
+  <span class="nav-number">04</span>
+  <span>Trip schedule explorer</span>
+  <span class="nav-arrow">↗</span>
+</button>
+
+  <span class="nav-arrow">↗</span>
+</button>
+
+      <div class="sidebar-caption table-caption">DATA REGISTRY</div>
+      <div id="table-nav"></div>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <div>
+          <strong id="connection-label">Connecting to MySQL</strong>
+          <small>DATABASE CONNECTION</small>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-context">
+          <span class="eyebrow">TRANSPORTATION SYSTEM</span>
+          <span class="topbar-divider">/</span>
+          <span class="eyebrow">RELATIONAL DATA MODEL</span>
+        </div>
+        <div class="top-actions">
+          <span class="system-label"><span class="status-dot"></span> MySQL connected system</span>
+          <span class="project-mark">DB</span>
+        </div>
+      </header>
+
+      <section id="content" class="content">
+        <div class="loading">Mapping your transport network…</div>
+      </section>
+
+      <footer class="page-footer">
+        <span>TRANSIT ATLAS <span class="footer-separator">—</span> DBMS MINI PROJECT</span>
+        <span>ROUTES · STATIONS · BOOKINGS</span>
+      </footer>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
